@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout_top">
+
+
+        <TextView
+            android:id="@+id/textView_sendStr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send Message"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/sendString"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter Message"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="191dp" />
+
+
+        <EditText
+            android:id="@+id/receiveString"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="345dp">
+
+            <ImageButton
+                android:id="@+id/img_btn_Center"
+                android:layout_width="87dp"
+                android:layout_height="75dp"
+                android:background="@android:color/background_light"
+                app:layout_column="6"
+                app:layout_row="1"
+                app:srcCompat="@mipmap/ic_mcu"
+                tools:layout_editor_absoluteX="177dp"
+                tools:layout_editor_absoluteY="384dp" />
+
+            <ImageButton
+                android:id="@+id/img_btn_Left"
+                android:layout_width="74dp"
+                android:layout_height="72dp"
+                android:background="@android:color/background_light"
+                app:layout_column="5"
+                app:layout_row="1"
+                app:srcCompat="@mipmap/ic_arr_left"
+                tools:layout_editor_absoluteX="596dp"
+                tools:layout_editor_absoluteY="317dp" />
+
+            <ImageButton
+                android:id="@+id/img_btn_Bottom"
+                android:layout_width="87dp"
+                android:layout_height="63dp"
+                android:adjustViewBounds="false"
+                android:background="@android:color/background_light"
+                app:srcCompat="@mipmap/ic_arr_bottom"
+                tools:layout_editor_absoluteX="515dp"
+                tools:layout_editor_absoluteY="234dp"
+                app:layout_column="6"
+                app:layout_row="2" />
+
+            <ImageButton
+                android:id="@+id/img_btn_Right"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:background="@android:color/background_light"
+                app:srcCompat="@mipmap/ic_arr_right"
+                app:layout_column="7"
+                app:layout_row="1" />
+
+            <ImageButton
+                android:id="@+id/img_btn_Top"
+                android:layout_width="87dp"
+                android:layout_height="66dp"
+                android:background="@android:color/background_light"
+                app:srcCompat="@mipmap/ic_arr_top"
+                tools:layout_editor_absoluteX="-73dp"
+                tools:layout_editor_absoluteY="406dp"
+                app:layout_column="6"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/btn_open_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Bluetooth"
+                app:layout_column="4"
+                app:layout_row="1" />
+
+            <Switch
+                android:id="@+id/switch_set_listener1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switch"
+                app:layout_column="4"
+                app:layout_row="2" />
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
